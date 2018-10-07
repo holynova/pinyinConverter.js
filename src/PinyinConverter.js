@@ -20,10 +20,13 @@ class PininConverter {
   }
 
   capitalize(str) {
-    let charList = str.toLowerCase().split('')
-    let first = charList.shift()
-    let rest = charList
-    return first.toUpperCase() + rest.join('')
+    let clone = str
+    return clone.replace(/\b\w/g, c => c.toUpperCase())
+    // let charList = str.toLowerCase().split('')
+    // let first = charList.shift()
+    // let rest = charList
+    // return first.toUpperCase() + rest.join('')
+    // return 
   }
 
   formatLetterCase(str, letter = 'capital') {
