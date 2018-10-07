@@ -110,87 +110,89 @@ class PininConverter {
 
 }
 
-
-var text = `程暘
-吴国庆
-顾晓桐
-尤嘉
-张轩
-马壮
-何赢潮
-巨万里
-孙伦茂
-于勇
-陈剑
-魏永霖
-张迪
-闫波辉
-李冉君
-牟华
-徐盛
-吕文斌
-袁超
-池建炜
-陆诗捷
-李敬翔
-严巍
-周东青
-杜壮壮
-曾磊文
-沈正中
-董浩鹏
-张栋嘉
-胡倩
-周成龙
-陈涛峰
-桑益民
-葛小龙
-罗林峰
-曹自豪
-耿海浪
-文韬
-杭晟睿
-肖梦佳
-李照
-范荪
-殷鹏
-沈超
-王洪基
-李胜
-方启明
-丁晓杰
-周有亮
-顾琪瑶
-张省
-张新宇
-王国涛
-张嵘`;
-
-// let input = '顾晓彤'
-input = text
-let p = new PininConverter(input)
-log(JSON.stringify(p.go()))
-// log(p.convertWord(input, 'liu dehua'))
-// let list = p.go()
-// log(pinyinlite('大阳'))
+module.exports = PininConverter
 
 
-function test() {
-    let arr = [
-        'liu de hua',
-        'liu dehua',
-        'dehua liu',
-        'de hua liu',
-        'dhliu',
-        'liudh',
-        'dhliu',
-        'ldh',
-        'dhl'
-    ]
-    let p = new PininConverter('刘德华')
-    for (let mode of arr) {
-        let result = p.go(mode, 'lower')[0]
-        log(`${mode === result}   | ${mode}, ${result}, `)
-    }
-}
-test()
+// var text = `程暘
+// 吴国庆
+// 顾晓桐
+// 尤嘉
+// 张轩
+// 马壮
+// 何赢潮
+// 巨万里
+// 孙伦茂
+// 于勇
+// 陈剑
+// 魏永霖
+// 张迪
+// 闫波辉
+// 李冉君
+// 牟华
+// 徐盛
+// 吕文斌
+// 袁超
+// 池建炜
+// 陆诗捷
+// 李敬翔
+// 严巍
+// 周东青
+// 杜壮壮
+// 曾磊文
+// 沈正中
+// 董浩鹏
+// 张栋嘉
+// 胡倩
+// 周成龙
+// 陈涛峰
+// 桑益民
+// 葛小龙
+// 罗林峰
+// 曹自豪
+// 耿海浪
+// 文韬
+// 杭晟睿
+// 肖梦佳
+// 李照
+// 范荪
+// 殷鹏
+// 沈超
+// 王洪基
+// 李胜
+// 方启明
+// 丁晓杰
+// 周有亮
+// 顾琪瑶
+// 张省
+// 张新宇
+// 王国涛
+// 张嵘`;
+
+// // let input = '顾晓彤'
+// input = text
+// let p = new PininConverter(input)
+// log(JSON.stringify(p.go()))
+// // log(p.convertWord(input, 'liu dehua'))
+// // let list = p.go()
+// // log(pinyinlite('大阳'))
+
+
+// function test() {
+//     let arr = [
+//         'liu de hua',
+//         'liu dehua',
+//         'dehua liu',
+//         'de hua liu',
+//         'dhliu',
+//         'liudh',
+//         'dhliu',
+//         'ldh',
+//         'dhl'
+//     ]
+//     let p = new PininConverter('刘德华')
+//     for (let mode of arr) {
+//         let result = p.go(mode, 'lower')[0]
+//         log(`${mode === result}   | ${mode}, ${result}, `)
+//     }
+// }
+// test()
